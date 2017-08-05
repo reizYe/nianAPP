@@ -1,7 +1,7 @@
 var app = angular.module('myApp', ['ui.router']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('');
+    $urlRouterProvider.otherwise('/jiben');
     $stateProvider
         .state('jiben',{
             url:'/jiben',
@@ -9,7 +9,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         })
         .state('guanzhu',{
             url:'/guanzhu',
-            templateUrl:'views/guanzhu.html'
+            templateUrl:'views/guanzhu/guanzhu.html'
         })
         .state('faxian',{
             url:'/faxian',
