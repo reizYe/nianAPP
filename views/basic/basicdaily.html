@@ -1,9 +1,32 @@
 <header class="commonheader">
-    <section>
+    <section class="basicdailyheader">
         <span class="iconfont icon-back" ui-sref="basic"></span>
         <div>
             <!--<span class="addheader">新进展！</span>-->
         </div>
-        <span class="iconfont icon-success"></span>
+        <span class="iconfont icon-more"></span>
     </section>
 </header>
+<section class="commonbody">
+    <article class="basicdailybody">
+        <div class="basicdailyfirst">
+            <img ng-src="{{daily.img}}" alt="">
+            <button>更新</button>
+        </div>
+        <div class="basicdailysecond">
+            <span>{{daily.description}}</span><br>
+            <div>
+                <span>进展</span><span>0</span>
+                <span>赞</span><span>0</span>
+                <span>关注</span><span>0</span>
+            </div>
+        </div>
+        <div class="basicdailythird">
+            <button>添加标签</button>
+        </div>
+        <div class="basicdailyfourth">
+            <img src="img/2.jpg" alt="">
+            <button>+</button>
+        </div>
+    </article>
+</section>

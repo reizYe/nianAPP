@@ -103,16 +103,17 @@ app.controller("basicsettingCtrl",function ($scope) {
 // app.controller("basicselectCtrl",function ($scope) {
 //
 // });
-// app.controller("basicdailyCtrl",function ($scope,$stateParams) {
-//     $scope.basiclist = $scope.basic_data;
-//     // for(var i=0;i<$scope.basiclist.length;i++)
-//     // {
-//     //     if ($scope.basiclist[i].id == $stateParams.id){
-//     //         $scope.daily = $scope.basiclist[i];
-//     //     }
-//     // }
-//
-// })
+app.controller("basicdailyCtrl",function ($scope,$stateParams) {
+    $scope.basiclist = $scope.basic_data;
+    for(var i=0;i<$scope.basiclist.length;i++)
+    {
+        if ($scope.basiclist[i].id == $stateParams.id){
+            $scope.daily = $scope.basiclist[i];
+            break;
+        }
+    }
+
+})
 app.controller("focusCtrl",function ($scope) {
 
 });

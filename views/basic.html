@@ -21,9 +21,9 @@
         </div>
         <article class="containerbody">
             <div ng-repeat="item in basic_data">
-                <div >
+                <div>
                     <!--ui-sref="basic/basicdaily/{{item.id}}"-->
-                    <a ><img ng-src="{{item.img}}" alt="" class="containerbody-img"></a>
+                    <a href="#/basic/basicdaily/{{item.id}}"><img ng-src="{{item.img}}"  class="containerbody-img"></a>
                 </div>
                 <p>{{item.description}}</p>
             </div>

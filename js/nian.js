@@ -23,11 +23,11 @@ app.config( function($stateProvider, $urlRouterProvider) {
             controller:'basicmoneyCtrl',
             templateUrl:'views/basic/basicmoney.html'
         })
-        // .state('basic/basicdaily',{
-        //     url:'/basic/basicdaily',
-        //     controller:'basicdailyCtrl',
-        //     templateUrl:'views/basic/basicdaily.html'
-        // })
+        .state('basic/basicdaily',{
+            url:'/basic/basicdaily/:id',
+            controller:'basicdailyCtrl',
+            templateUrl:'views/basic/basicdaily.html'
+        })
         .state('focus',{
             url:'/focus',
             controller:'focusCtrl',
