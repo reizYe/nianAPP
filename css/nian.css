@@ -16,6 +16,7 @@ ul li{
 }
 body{
     font-size: 10px;
+    background-color: #f1f1f1;
 }
 .sprites2x{
     background: url("../img/sprites2x.png") center;
@@ -47,6 +48,10 @@ footer>section>div{
     background-color: rgba(0, 170, 200, 0.8);
     width: 40%;
     display: inline-block;
+}
+.bottomcontent{
+    width: 100%;
+    height: 3rem;
 }
 /*基本页面的样式*/
     .icon-service{
@@ -170,8 +175,8 @@ footer>section>div{
 }
 .focus-img{
     display: inline-block;
-    background: url("../img/2.jpg");
-    background-size: contain;
+    /*background: url("../img/2.jpg");*/
+    /*background-size: contain;*/
     width: 2rem;
     height: 2rem;
     border-radius: 1rem;
@@ -239,7 +244,37 @@ footer>section>div{
     -moz-appearance:none;
     -webkit-appearance:none;
 }
-select::-ms-expand { display: none; }
+.addshowtext{
+    border-bottom: 0.01rem solid #a9a9a9;
+    padding: 0 1rem;
+    height: 3rem;
+}
+.addshowtext>img,.addchoosetext>div>img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+    padding-top: .5rem;
+    vertical-align: middle;
+}
+.addshowtext>span,.addchoosetext>div>span{
+    padding-left: .5rem;
+    vertical-align: middle;
+}
+
+.addshowtext>b{
+    display: inline-block;
+    float: right;
+    background-size: 500px;
+    background-position: -80px -368px;
+    width: 2rem;
+    height: 2rem;
+    padding-top: .5rem;
+    vertical-align: middle;
+    transform: rotate(90deg);
+}
+.addchoosetext>div{
+    padding: 0 1rem;
+}
 /*消息页面的样式*/
 .messagearticle{
     text-align: center;
@@ -334,13 +369,13 @@ select::-ms-expand { display: none; }
 .userinfo{
     margin-top: 1rem;
 }
-.userinfo>span:first-child{
+.userinfo>img{
     display:inline-block;
-    background: url("../img/sprites2x.png") center;
-    background-size: 25rem;
+    /*background: url("../img/sprites2x.png") center;*/
+    /*background-size: 25rem;*/
     width: 3rem;
     height: 3rem;
-    background-position: 11.9rem 0;
+    /*background-position: 11.9rem 0;*/
 }
 .userinfo>b{
     display: inline-block;
@@ -366,13 +401,270 @@ select::-ms-expand { display: none; }
 }
 /*推荐页面样式*/
 .recommendcontent{
-    margin: 1rem 1rem;
+    margin: 1rem;
+    padding-left: 1rem;
+    /*text-align: center;*/
 }
 .recommendcontent>div{
-    width: 20rem;
+    width: 33%;
+    /*margin: 1rem;*/
+    /*padding-right: 1rem;*/
+    display: inline-block;
+    font-size: 1rem;
 }
 .recommendcontent img{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: block;
+}
+/*发消息的关注页面*/
+.messagebody{
+    margin: 1rem;
+}
+.messagebody>div>div{
+    display: inline-block;
+    width: 75%;
+    margin-left:1rem ;
+    padding-bottom: 1rem;
+    border-bottom: 0.01rem solid #a9a9a9;
+}
+.messagebody>div{
+    margin-bottom: 1rem;
+}
+.messagebody img{
     width: 3rem;
     height: 3rem;
+    border-radius: 1.5rem;
+    vertical-align: middle;
+}
+.messagebody span{
+    display: inline-block;
+    /*line-height: 3rem;*/
+    font-size: 1rem;
+}
+.messagebody button{
+    text-decoration: underline;
+    background-color: #00a0df;
+    color: white;
+    width: 3rem;
+    height: 1.5rem;
+    float: right;
+    border-radius: 1.5rem;
+    border: none;
+}
+/*收藏页面的样式*/
+.collectbody{
+    background-color: #e4e4e4;
+    height: 40rem;
+}
+.collectmain{
+    margin-top: 1rem;
+}
+.collectmain>div{
+    width: 100%;
+}
+.collectmain b{
+    float: right;
+}
+.collectmain em{
+    padding-left: 1rem;
+}
+.collectmain>div:first-child{
+    background-color: white;
+    font-size: 1rem;
+    padding:0.5rem 0rem;
+    margin: 1.5rem 0;
+}
+.collectmain>div:first-child>b{
+    padding-right: 1rem;
+}
+.collectgood>span{
+    padding:0 0 .6rem 1rem;
+    display: inline-block;
+    color: #8b8b8b;
+}
+.collectgood>div{
+    background-color: white;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+}
+
+.collectfocus{
+    margin-top: 1rem;
+}
+.collectfocus>span{
+    padding:0 1rem .6rem 1rem;
     display: block;
+}
+.collectfocus>div{
+    padding: .5rem 1rem;
+    background-color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+/*提现页面样式*/
+.commonheader>section>div.moneyhead{
+    width: 75%;
+}
+.moneyheader{
+    text-align: center;
+    background-color: white;
+}
+.moneyheader>img{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.moneyheader>p:nth-child(2){
+    margin: .5rem 0;
+}
+.moneyheader>p:nth-child(3){
+    font-size: 1rem;
+}
+.moneyheader>button{
+    margin: 1rem 0;
+    width: 5rem;
+    height: 2rem;
+    background-color: #00b3ee;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    border: none;
+}
+.moneycontent{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    background-color: white;
+}
+.moneycontent>span{
+    vertical-align: middle;
+    line-height: 3rem;
+    display: inline-block;
+}
+.moneyfunc{
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+.moneyfunc>span:first-child{
+    font-size: 1rem;
+}
+.moneyfunc>span:nth-child(2){
+    float: right;
+    display: inline-block;
+}
+.moneyfunc>span:last-child{
+    color: #8b8b8b;
+}
+/*设置页面的样式*/
+.settingheader{
+    margin: 1rem;
+    background-image: url("../img/course_banner.jpg");
+    height: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    z-index: -1;
+}
+.settingheader>img{
+    display: inline-block;
+    padding-top: 8rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+.settingheader>div{
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    height: 3rem;
+    /*display: inline-block;*/
+    border-radius:0 0 1rem 1rem;
+    background-color: black;
+}
+.settingheader>div>button{
+    /*width: 30%;*/
+    background-color: black;
+    border: none;
+    padding: 0.7rem 2rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.settingbody{
+    background-color: white;
+    font-size: .8rem;
+    margin: 1.5rem 0;
+
+}
+.settingbody>div{
+    padding: .5rem 1rem;
+    /*border-top: .1px solid #d1d1d1;*/
+    border-bottom: .1px solid #d1d1d1;
+}
+.settingbody>div>span:last-child{
+    float: right;
+    color: #cccccc;
+}
+.settingfooter{
+   margin:1rem 0 6rem 0;
+    text-align: center;
+}
+.settingfooter>div:first-child{
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.settingfooter>div:last-child{
+    display: inline-block;
+    color: #8b8b8b;
+}
+.al-toggle-button{
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 2.5rem;
+    height:1.5rem;
+    background: #dfdfdf;
+    border-radius: 1rem;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    box-sizing: border-box;
+    float: right;
+}
+.al-toggle-button:checked{
+    border-color: #04be02;
+    background-color: #04be02;
+}
+.al-toggle-button:before, .al-toggle-button:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.4rem;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+.al-toggle-button:before{
+    width: 0rem;
+    background-color: #fdfdfd;
+}
+.al-toggle-button:after{
+    width: 1.4rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.al-toggle-button:checked:before{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+.al-toggle-button:checked:after{
+    transform: translateX(1.2rem);
+    -webkit-transform: translateX(1.2rem);
 }

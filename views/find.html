@@ -35,7 +35,7 @@
     <article class="hotnews">
         <div class="hottitle">
             <span>最新</span>
-            <span>更多></span>
+            <span ui-sref="find/findnew">更多></span>
         </div>
         <div class="hotcontent">
             <div>
@@ -56,104 +56,103 @@
             </div>
         </div>
     </article>
-    <article class="hotnews">
+    <article class="hotnews" ng-repeat="item in findlist">
         <ul>
             <li class="clearfix">
-                <span class="hotusernum">#1</span>
+                <span class="hotusernum">#{{item.id}}</span>
                 <div class="userinfo">
-                    <span></span><br>
-                    <b>小确幸</b><br>
-                    <span>人生太苦，你吃颗糖</span>
+                    <img ng-src="{{item.img}}" alt=""><br>
+                    <b>{{item.title}}</b><br>
+                    <span>{{item.content}}</span>
                 </div>
                 <div class="userstatus">
                     <div>
                         <span>按&nbsp;&nbsp;赞</span><br>
-                        <b>5.4k</b>
+                        <b>{{item.saygood}}</b>
                     </div>
                     <div>
                         <span>进&nbsp;&nbsp;展</span><br>
-                        <b>115</b>
+                        <b>{{item.progress}}</b>
                     </div>
                 </div>
             </li>
-            <li><span></span></li>
-            <li></li>
-            <li></li>
+
         </ul>
     </article>
-    <article class="hotnews">
-        <ul>
-            <li class="clearfix">
-                <span class="hotusernum">#1</span>
-                <div class="userinfo">
-                    <span></span><br>
-                    <b>小确幸</b><br>
-                    <span>人生太苦，你吃颗糖</span>
-                </div>
-                <div class="userstatus">
-                    <div>
-                        <span>按&nbsp;&nbsp;赞</span><br>
-                        <b>5.4k</b>
-                    </div>
-                    <div>
-                        <span>进&nbsp;&nbsp;展</span><br>
-                        <b>115</b>
-                    </div>
-                </div>
-            </li>
-            <li><span></span></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </article>
-    <article class="hotnews">
-        <ul>
-            <li class="clearfix">
-                <span class="hotusernum">#1</span>
-                <div class="userinfo">
-                    <span></span><br>
-                    <b>小确幸</b><br>
-                    <span>人生太苦，你吃颗糖</span>
-                </div>
-                <div class="userstatus">
-                    <div>
-                        <span>按&nbsp;&nbsp;赞</span><br>
-                        <b>5.4k</b>
-                    </div>
-                    <div>
-                        <span>进&nbsp;&nbsp;展</span><br>
-                        <b>115</b>
-                    </div>
-                </div>
-            </li>
-            <li><span></span></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </article>
-    <article class="hotnews">
-        <ul>
-            <li class="clearfix">
-                <span class="hotusernum">#1</span>
-                <div class="userinfo">
-                    <span></span><br>
-                    <b>小确幸</b><br>
-                    <span>人生太苦，你吃颗糖</span>
-                </div>
-                <div class="userstatus">
-                    <div>
-                        <span>按&nbsp;&nbsp;赞</span><br>
-                        <b>5.4k</b>
-                    </div>
-                    <div>
-                        <span>进&nbsp;&nbsp;展</span><br>
-                        <b>115</b>
-                    </div>
-                </div>
-            </li>
-            <li><span></span></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </article>
+    <div class="bottomcontent"></div>
+    <!--<article class="hotnews">-->
+        <!--<ul>-->
+            <!--<li class="clearfix">-->
+                <!--<span class="hotusernum">#1</span>-->
+                <!--<div class="userinfo">-->
+                    <!--<span></span><br>-->
+                    <!--<b>小确幸</b><br>-->
+                    <!--<span>人生太苦，你吃颗糖</span>-->
+                <!--</div>-->
+                <!--<div class="userstatus">-->
+                    <!--<div>-->
+                        <!--<span>按&nbsp;&nbsp;赞</span><br>-->
+                        <!--<b>5.4k</b>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span>进&nbsp;&nbsp;展</span><br>-->
+                        <!--<b>115</b>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li><span></span></li>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+        <!--</ul>-->
+    <!--</article>-->
+    <!--<article class="hotnews">-->
+        <!--<ul>-->
+            <!--<li class="clearfix">-->
+                <!--<span class="hotusernum">#1</span>-->
+                <!--<div class="userinfo">-->
+                    <!--<span></span><br>-->
+                    <!--<b>小确幸</b><br>-->
+                    <!--<span>人生太苦，你吃颗糖</span>-->
+                <!--</div>-->
+                <!--<div class="userstatus">-->
+                    <!--<div>-->
+                        <!--<span>按&nbsp;&nbsp;赞</span><br>-->
+                        <!--<b>5.4k</b>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span>进&nbsp;&nbsp;展</span><br>-->
+                        <!--<b>115</b>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li><span></span></li>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+        <!--</ul>-->
+    <!--</article>-->
+    <!--<article class="hotnews">-->
+        <!--<ul>-->
+            <!--<li class="clearfix">-->
+                <!--<span class="hotusernum">#1</span>-->
+                <!--<div class="userinfo">-->
+                    <!--<span></span><br>-->
+                    <!--<b>小确幸</b><br>-->
+                    <!--<span>人生太苦，你吃颗糖</span>-->
+                <!--</div>-->
+                <!--<div class="userstatus">-->
+                    <!--<div>-->
+                        <!--<span>按&nbsp;&nbsp;赞</span><br>-->
+                        <!--<b>5.4k</b>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<span>进&nbsp;&nbsp;展</span><br>-->
+                        <!--<b>115</b>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li><span></span></li>-->
+            <!--<li></li>-->
+            <!--<li></li>-->
+        <!--</ul>-->
+    <!--</article>-->
 </section>

@@ -1,14 +1,14 @@
 <header class="basic" ng-controller="basicCtrl">
     <nav>
-        <span class="iconfont icon-set"></span>
-        <span class="iconfont icon-service"></span>
+        <span class="iconfont icon-set" ui-sref="basic/basicsetting"></span>
+        <span class="iconfont icon-service" ui-sref="basic/basiccollect"></span>
     </nav>
    <section class="basic-userinfo">
-       <div class="userimg"></div>
+       <div class="userimg" ui-sref="basic/basicsetting"></div>
        <p>{{username}}</p>
        <p>倒计时 {{usertime}}</p>
        <article>
-           <div><a href="">念币&nbsp;<span>{{money}}</span></a></div>
+           <div><a ui-sref="basic/basicmoney">念币&nbsp;<span>{{money}}</span></a></div>
            <div><a href="">宠物&nbsp;<span>{{dog}}</span></a></div>
        </article>
    </section>

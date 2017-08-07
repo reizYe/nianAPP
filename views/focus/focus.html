@@ -2,26 +2,27 @@
     <section>
         <span class="iconfont icon-account"></span>
         <div>
-            <span>关注</span>
-            <span>动态</span>
+            <span ui-sref="focus">关注</span>
+            <span ui-sref="focus/focusactive">动态</span>
         </div>
         <span class="iconfont icon-search"></span>
     </section>
 </header>
 <section class="commonbody">
-    <article class="focus-article">
+    <article class="focus-article" ng-repeat="item in focuslist">
         <div>
-            <span class="focus-img"></span>
+            <!--<span class="focus-img"></span>-->
+            <img ng-src="{{item.img}}" class="focus-img" alt="">
             <div class="focus-userinfo clearfix">
-                <p>蹲墙角画圈圈</p>
-                <span class="timespan clearfix">08-03 09:32</span>
-                <p>打卡</p>
+                <p>{{item.name}}</p>
+                <span class="timespan clearfix">{{item.time}}</span>
+                <p>{{item.type}}</p>
             </div>
         </div>
-        <div class="focus-content">内容刚果共和国</div>
+        <div class="focus-content">{{item.content}}</div>
         <div class="focus-bottom">
            <span><b>回应</b></span>
-           <span><b>赞&nbsp;2</b></span>
+           <span><b>赞&nbsp;{{item.good}}</b></span>
             <div class="focus-bottom-right">
                 <button><i class="iconfont icon-remind"></i></button>
                 <button><i class="iconfont icon-lights"></i></button>
@@ -30,67 +31,67 @@
 
         </div>
     </article>
-    <article class="focus-article">
-        <div>
-            <span class="focus-img"></span>
-            <div class="focus-userinfo clearfix">
-                <p>蹲墙角画圈圈</p>
-                <span class="timespan clearfix">08-03 09:32</span>
-                <p>打卡</p>
-            </div>
-        </div>
-        <div class="focus-content">内容刚果共和国</div>
-        <div class="focus-bottom">
-            <span><b>回应</b></span>
-            <span><b>赞&nbsp;2</b></span>
-            <div class="focus-bottom-right">
-                <button><i class="iconfont icon-remind"></i></button>
-                <button><i class="iconfont icon-lights"></i></button>
-                <button><i class="iconfont icon-electronics"></i></button>
-            </div>
+    <!--<article class="focus-article">-->
+        <!--<div>-->
+            <!--<span class="focus-img"></span>-->
+            <!--<div class="focus-userinfo clearfix">-->
+                <!--<p>蹲墙角画圈圈</p>-->
+                <!--<span class="timespan clearfix">08-03 09:32</span>-->
+                <!--<p>打卡</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="focus-content">内容刚果共和国</div>-->
+        <!--<div class="focus-bottom">-->
+            <!--<span><b>回应</b></span>-->
+            <!--<span><b>赞&nbsp;2</b></span>-->
+            <!--<div class="focus-bottom-right">-->
+                <!--<button><i class="iconfont icon-remind"></i></button>-->
+                <!--<button><i class="iconfont icon-lights"></i></button>-->
+                <!--<button><i class="iconfont icon-electronics"></i></button>-->
+            <!--</div>-->
 
-        </div>
-    </article>
-    <article class="focus-article">
-        <div>
-            <span class="focus-img"></span>
-            <div class="focus-userinfo clearfix">
-                <p>蹲墙角画圈圈</p>
-                <span class="timespan clearfix">08-03 09:32</span>
-                <p>打卡</p>
-            </div>
-        </div>
-        <div class="focus-content">内容刚果共和国</div>
-        <div class="focus-bottom">
-            <span><b>回应</b></span>
-            <span><b>赞&nbsp;2</b></span>
-            <div class="focus-bottom-right">
-                <button><i class="iconfont icon-remind"></i></button>
-                <button><i class="iconfont icon-lights"></i></button>
-                <button><i class="iconfont icon-electronics"></i></button>
-            </div>
+        <!--</div>-->
+    <!--</article>-->
+    <!--<article class="focus-article">-->
+        <!--<div>-->
+            <!--<span class="focus-img"></span>-->
+            <!--<div class="focus-userinfo clearfix">-->
+                <!--<p>蹲墙角画圈圈</p>-->
+                <!--<span class="timespan clearfix">08-03 09:32</span>-->
+                <!--<p>打卡</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="focus-content">内容刚果共和国</div>-->
+        <!--<div class="focus-bottom">-->
+            <!--<span><b>回应</b></span>-->
+            <!--<span><b>赞&nbsp;2</b></span>-->
+            <!--<div class="focus-bottom-right">-->
+                <!--<button><i class="iconfont icon-remind"></i></button>-->
+                <!--<button><i class="iconfont icon-lights"></i></button>-->
+                <!--<button><i class="iconfont icon-electronics"></i></button>-->
+            <!--</div>-->
 
-        </div>
-    </article>
-    <article class="focus-article">
-        <div>
-            <span class="focus-img"></span>
-            <div class="focus-userinfo clearfix">
-                <p>蹲墙角画圈圈</p>
-                <span class="timespan clearfix">08-03 09:32</span>
-                <p>打卡</p>
-            </div>
-        </div>
-        <div class="focus-content">内容刚果共和国</div>
-        <div class="focus-bottom">
-            <span><b>回应</b></span>
-            <span><b>赞&nbsp;2</b></span>
-            <div class="focus-bottom-right">
-                <button><i class="iconfont icon-remind"></i></button>
-                <button><i class="iconfont icon-lights"></i></button>
-                <button><i class="iconfont icon-electronics"></i></button>
-            </div>
+        <!--</div>-->
+    <!--</article>-->
+    <!--<article class="focus-article">-->
+        <!--<div>-->
+            <!--<span class="focus-img"></span>-->
+            <!--<div class="focus-userinfo clearfix">-->
+                <!--<p>蹲墙角画圈圈</p>-->
+                <!--<span class="timespan clearfix">08-03 09:32</span>-->
+                <!--<p>打卡</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="focus-content">内容刚果共和国</div>-->
+        <!--<div class="focus-bottom">-->
+            <!--<span><b>回应</b></span>-->
+            <!--<span><b>赞&nbsp;2</b></span>-->
+            <!--<div class="focus-bottom-right">-->
+                <!--<button><i class="iconfont icon-remind"></i></button>-->
+                <!--<button><i class="iconfont icon-lights"></i></button>-->
+                <!--<button><i class="iconfont icon-electronics"></i></button>-->
+            <!--</div>-->
 
-        </div>
-    </article>
+        <!--</div>-->
+    <!--</article>-->
 </section>
