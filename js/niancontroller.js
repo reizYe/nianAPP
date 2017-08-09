@@ -73,12 +73,14 @@ app.controller("addCtrl",function ($scope) {
     $scope.addlist = $scope.basic_data;
     $scope.show =false;
     // $scope.hide = false;
+    $scope.myimages = "img/p1.png";
     $scope.choosetext = "记本";
     $scope.toggle = function () {
         $scope.show = !$scope.show;
     };
-    $scope.selectdesc = function (obj) {
-        $scope.choosetext = obj;
+    $scope.selectdesc = function (obj1,obj2) {
+        $scope.choosetext = obj1;
+        $scope.myimages = obj2;
     }
     $scope.close = function () {
         $scope.show = !$scope.show;

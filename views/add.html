@@ -10,7 +10,7 @@
 <section class="commonbody">
     <article class="addbody">
       <div class="addshowtext" ng-click="toggle()">
-          <img src="img/p1.png" alt="">
+          <img  ng-src="{{myimages}}" alt="">
           <span>{{choosetext}}</span>
           <b class="sprites2x"></b>
       </div>
@@ -19,7 +19,7 @@
         <div class="addchoosetext" ng-show="show" >
             <div ng-repeat="item in addlist">
                 <img ng-src="{{item.img}}"  alt="">
-                <span ng-click="selectdesc(item.description)">{{item.description}}</span>
+                <span ng-click="selectdesc(item.description,item.img)">{{item.description}}</span>
             </div>
         </div>
     </article>
