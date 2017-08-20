@@ -1,0 +1,749 @@
+*{margin: 0 ;
+padding: 0}
+a{
+    text-decoration: none;
+}
+clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+ul li{
+    list-style: none;
+}
+body{
+    font-size: 10px;
+    background-color: #f1f1f1;
+}
+.sprites2x{
+    background: url("../img/sprites2x.png") center;
+    background-size: 100px;
+}
+footer{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    bottom: 0rem;
+}
+i{
+    color: #8c8c8c;
+    font-weight: 700;
+}
+i:hover{
+    color: white;
+}
+footer>section>div{
+   display: inline-block;
+    width: 18%;
+    text-align: center;
+    margin:.5rem 0;
+}
+.icon-add{
+    color: white;
+}
+.addbutton{
+    background-color: rgba(0, 170, 200, 0.8);
+    width: 40%;
+    display: inline-block;
+}
+.bottomcontent{
+    width: 100%;
+    height: 3rem;
+}
+/*基本页面的样式*/
+    .icon-service{
+        float: right;
+    }
+    .basic{
+        background: url("../img/course_banner.jpg") no-repeat;
+        background-size: cover;
+    }
+    .basic>nav{
+        margin:0 5%;
+        padding-top: 5%;
+    }
+    .basic-userinfo{
+        text-align: center;
+    }
+    .userimg{
+        display: inline-block;
+        background: url("../img/1.jpg") center;
+        background-size: 5rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+        margin-top: 3rem;
+    }
+    .basic-userinfo>p:nth-child(2){
+        font-size: 1.4rem;
+        color: white;
+    }
+    .basic-userinfo:last-child{
+        color: white;
+    }
+    .basic-userinfo>article{
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .basic-userinfo>article>div{
+        display: inline-block;
+        background-color: #0c0c0c;
+        opacity: 0.7;
+        width: 3rem;
+        height: 1.5rem;
+    }
+.basic-userinfo a{
+    display: inline-block;
+    color: white;
+    text-decoration: underline;
+    margin: .3rem 0;
+}
+.basic-container{
+    margin: 2rem 10%;
+}
+/*.containerhead{*/
+    /*margin: 0 10%;*/
+/*}*/
+.containerhead>span:first-child{
+    font-weight: 500;
+    display: inline-block;
+}
+.containerhead>span:last-child{
+    color: #8c8c8c;
+    display: inline-block;
+    float: right;
+}
+.containerbody{
+    /*margin-top: 1rem;*/
+    /*margin: 1rem 10%;*/
+    margin: 1rem -1.5rem 0 -1rem;
+}
+.containerbody>div{
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    margin-top: 1rem;
+}
+.containerbody-img{
+    /*background: url("../img/p1.png");*/
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+
+}
+.containerbody p{
+    text-align: center;
+    margin: .5rem 0;
+}
+
+/*关注页面的css*/
+.commonheader{
+    background-color: #0c0c0c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+.commonheader>section{
+    padding: 1rem 0 .8rem 0;
+    margin: 0 2.5%;
+    width: 95%;
+    text-align: center;
+}
+.commonheader>section>div{
+    display: inline-block;
+    text-align: center;
+    width: 85%;
+}
+.commonheader>section>div>span{
+    /*text-align: center;*/
+    display: inline-block;
+    margin:0 1rem;
+    color: #8c8c8c;
+}
+.commonbody{
+    padding-top: 3rem;
+}
+.focus-article{
+    margin: 2rem 1rem;
+    border-bottom: 1px solid #c2baba;
+}
+.focus-img{
+    display: inline-block;
+    /*background: url("../img/2.jpg");*/
+    /*background-size: contain;*/
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+
+}
+.focus-bottom{
+    padding-bottom: 2rem;
+}
+.focus-userinfo{
+    display: inline-block;
+    width: 80%;
+    padding-top: .1rem;
+}
+.focus-userinfo>p:first-child{
+    display: inline-block;
+    color: #00b3ee;
+}
+.focus-userinfo>span{
+    float: right;
+    margin-right: -2rem;
+    color: #8c8c8c;
+}
+.focus-userinfo>p:last-child{
+    color: #8c8c8c;
+    margin-top: .3rem;
+}
+.focus-content{
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+.focus-bottom>span{
+    display: inline-block;
+    text-align: center;
+    background-color: #bcb7b7;
+    opacity: 0.5;
+    width: 2rem;
+    height: 1rem;
+}
+.focus-bottom>span>b{
+    display: inline-block;
+    vertical-align: middle;
+    color: #514f4f;
+}
+.focus-bottom-right{
+    float: right;
+}
+.focus-bottom-right>button{
+    border-radius: 50%;
+    border:0.1rem solid #bcb7b7 ;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/*添加页面的样式*/
+.commonheader>section>div>span.addheader{
+    color: white;
+    font-size: 1rem;
+}
+.addinput{
+    margin:1rem 1rem 0 1rem ;
+}
+.addselect{
+    border: none;
+    width: 100%;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.addshowtext{
+    border-bottom: 0.01rem solid #a9a9a9;
+    padding: 0 1rem;
+    height: 3rem;
+}
+.addshowtext>img,.addchoosetext>div>img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: .3rem;
+    padding-top: .5rem;
+    vertical-align: middle;
+}
+.addshowtext>span,.addchoosetext>div>span{
+    padding-left: .5rem;
+    vertical-align: middle;
+}
+
+.addshowtext>b{
+    display: inline-block;
+    float: right;
+    background-size: 500px;
+    background-position: -80px -368px;
+    width: 2rem;
+    height: 2rem;
+    padding-top: .5rem;
+    vertical-align: middle;
+    transform: rotate(90deg);
+}
+.addchoosetext>div{
+    padding: 0 1rem;
+}
+/*消息页面的样式*/
+.messagearticle{
+    text-align: center;
+    padding-top:1rem ;
+    background-color: #e9e3e3;
+}
+.messagearticle>div>div{
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.messagearticle>div>div:first-child,.messagearticle>div>div:nth-child(2){
+    border-right: solid .01rem #cccccc;
+}
+.messagearticle>div>div>span{
+    color: #8c8c8c;
+    margin: 0 1rem;
+    /*letter-spacing: 0.5rem;*/
+}
+.messagearticle>div>div>b{
+    display: inline-block;
+    text-align: center;
+}
+.messagecontent{
+    margin-top: 12rem;
+    text-align: center;
+}
+.messagecontent>div{
+    color: #8c8c8c;
+}
+.messagecontent>button{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #00a0df;
+    border: none;
+}
+.messagecontent>button a{
+    text-decoration: underline;
+    color: white;
+}
+/*发现页面的样式*/
+.hotnews{
+    margin: 1rem 0.8rem 0 0.8rem;
+    border-bottom: solid 0.01rem #cccccc;
+}
+.hottitle>span:first-child{
+    font-size: 1rem;
+}
+.hottitle>span:last-child{
+    float: right;
+    font-size: .8rem;
+    color: #8c8c8c;
+}
+.hotnews>div:last-child{
+    margin: 1rem 0;
+    text-align: center;
+}
+.hotcontent>div{
+    /*text-align: center;*/
+    display: inline-block;
+    width: 18%;
+    margin-right: .8rem;
+}
+.hotcontent>div>div{
+    background: url(../img/p5.png);
+    background-size: contain;
+    display: inline-block;
+    /*text-align: center;*/
+    width: 3.5rem;
+    height: 3.5rem;
+}
+.hotcontent>div>p{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.hotnews>ul>li{
+    text-align: center;
+}
+.hotusernum{
+    display: inline-block;
+    text-align: center;
+    background-color: #bcb7b7;
+    opacity: 0.5;
+    width: 2rem;
+    height: 1rem;
+    float: right;
+    margin-top: -1rem;
+}
+.userinfo{
+    margin-top: 1rem;
+}
+.userinfo>img{
+    display:inline-block;
+    /*background: url("../img/sprites2x.png") center;*/
+    /*background-size: 25rem;*/
+    width: 3rem;
+    height: 3rem;
+    /*background-position: 11.9rem 0;*/
+}
+.userinfo>b{
+    display: inline-block;
+    margin:1rem 0 .5rem 0;
+    font-size: 1rem;
+}
+.userinfo>span:last-child{
+    color: #8c8c8c;
+}
+.userstatus>div{
+    display: inline-block;
+    margin: 1rem 0;
+    text-align: center;
+}
+.userstatus>div:first-child{
+    /*border-right: ;*/
+    border-right: solid .01rem #cccccc;
+}
+.userstatus>div>span{
+    color: #8c8c8c;
+    display: inline-block;
+    margin: 0.5rem 1rem;
+}
+/*推荐页面样式*/
+.recommendcontent{
+    margin: 1rem;
+    padding-left: 1rem;
+    /*text-align: center;*/
+}
+.recommendcontent>div{
+    width: 33%;
+    /*margin: 1rem;*/
+    /*padding-right: 1rem;*/
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.recommendcontent img{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: block;
+    padding-bottom: .5rem;
+}
+/*发消息的关注页面*/
+.messagebody{
+    margin: 1rem;
+}
+.messagebody>div>div{
+    display: inline-block;
+    width: 75%;
+    margin-left:1rem ;
+    padding-bottom: 1rem;
+    border-bottom: 0.01rem solid #a9a9a9;
+}
+.messagebody>div{
+    margin-bottom: 1rem;
+}
+.messagebody img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    vertical-align: middle;
+}
+.messagebody span{
+    display: inline-block;
+    /*line-height: 3rem;*/
+    font-size: 1rem;
+}
+.messagebody button{
+    text-decoration: underline;
+    background-color: #00a0df;
+    color: white;
+    width: 3rem;
+    height: 1.5rem;
+    float: right;
+    border-radius: 1.5rem;
+    border: none;
+}
+/*收藏页面的样式*/
+.collectbody{
+    background-color: #e4e4e4;
+    height: 40rem;
+}
+.collectmain{
+    margin-top: 1rem;
+}
+.collectmain>div{
+    width: 100%;
+}
+.collectmain b{
+    float: right;
+}
+.collectmain em{
+    padding-left: 1rem;
+}
+.collectmain>div:first-child{
+    background-color: white;
+    font-size: 1rem;
+    padding:0.5rem 0rem;
+    margin: 1.5rem 0;
+}
+.collectmain>div:first-child>b{
+    padding-right: 1rem;
+}
+.collectgood>span{
+    padding:0 0 .6rem 1rem;
+    display: inline-block;
+    color: #8b8b8b;
+}
+.collectgood>div{
+    background-color: white;
+    font-size: 1rem;
+    padding:0.5rem 1rem;
+}
+
+.collectfocus{
+    margin-top: 1rem;
+}
+.collectfocus>span{
+    padding:0 1rem .6rem 1rem;
+    display: block;
+}
+.collectfocus>div{
+    padding: .5rem 1rem;
+    background-color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+/*提现页面样式*/
+.commonheader>section>div.moneyhead{
+    width: 75%;
+}
+.moneyheader{
+    text-align: center;
+    background-color: white;
+}
+.moneyheader>img{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.moneyheader>p:nth-child(2){
+    margin: .5rem 0;
+}
+.moneyheader>p:nth-child(3){
+    font-size: 1rem;
+}
+.moneyheader>button{
+    margin: 1rem 0;
+    width: 5rem;
+    height: 2rem;
+    background-color: #00b3ee;
+    border-radius: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    border: none;
+}
+.moneycontent{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    background-color: white;
+}
+.moneycontent>span{
+    vertical-align: middle;
+    line-height: 3rem;
+    display: inline-block;
+}
+.moneyfunc{
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+}
+.moneyfunc>span:first-child{
+    font-size: 1rem;
+}
+.moneyfunc>span:nth-child(2){
+    float: right;
+    display: inline-block;
+}
+.moneyfunc>span:last-child{
+    color: #8b8b8b;
+}
+/*设置页面的样式*/
+.settingheader{
+    margin: 1rem;
+    background-image: url("../img/course_banner.jpg");
+    height: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    z-index: -1;
+}
+.settingheader>img{
+    display: inline-block;
+    padding-top: 8rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+.settingheader>div{
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    height: 3rem;
+    /*display: inline-block;*/
+    border-radius:0 0 1rem 1rem;
+    background-color: black;
+}
+.settingheader>div>button{
+    /*width: 30%;*/
+    background-color: black;
+    border: none;
+    padding: 0.7rem 2rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+.settingbody{
+    background-color: white;
+    font-size: .8rem;
+    margin: 1.5rem 0;
+
+}
+.settingbody>div{
+    padding: .5rem 1rem;
+    /*border-top: .1px solid #d1d1d1;*/
+    border-bottom: .1px solid #d1d1d1;
+}
+.settingbody>div>span:last-child{
+    float: right;
+    color: #cccccc;
+}
+.settingfooter{
+   margin:1rem 0 6rem 0;
+    text-align: center;
+}
+.settingfooter>div:first-child{
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.settingfooter>div:last-child{
+    display: inline-block;
+    color: #8b8b8b;
+}
+.al-toggle-button{
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 2.5rem;
+    height:1.5rem;
+    background: #dfdfdf;
+    border-radius: 1rem;
+    border: 1px solid #dfdfdf;
+    outline: 0;
+    box-sizing: border-box;
+    float: right;
+}
+.al-toggle-button:checked{
+    border-color: #04be02;
+    background-color: #04be02;
+}
+.al-toggle-button:before, .al-toggle-button:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.4rem;
+    border-radius: 1rem;
+    transition: transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 0.3s;
+}
+.al-toggle-button:before{
+    width: 0rem;
+    background-color: #fdfdfd;
+}
+.al-toggle-button:after{
+    width: 1.4rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.al-toggle-button:checked:before{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+}
+.al-toggle-button:checked:after{
+    transform: translateX(1.2rem);
+    -webkit-transform: translateX(1.2rem);
+}
+/*记本详情样式*/
+.commonheader>section.basicdailyheader{
+    margin-bottom: 2rem;
+}
+.basicdailybody{
+    margin: 3rem 1rem;
+}
+.basicdailyfirst>img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: -2rem;
+    position: relative;
+    border: 3px solid white;
+    border-radius: .3rem;
+}
+.basicdailyfirst>button{
+    text-decoration: underline;
+    background-color: #00a0df;
+    color: white;
+    width: 4rem;
+    height: 1.5rem;
+    float: right;
+    border-radius: 1.5rem;
+    border: none;
+}
+.basicdailysecond{
+    margin: 1rem 0;
+}
+.basicdailysecond>span:first-child{
+    font-size: 1rem;
+    padding: .5rem 0;
+    font-weight: 700;
+    display: inline-block;
+}
+.basicdailysecond>div>span{
+    margin: 0 .1rem;
+    color: #8c8c8c;
+}
+.basicdailythird{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    margin-top: 1rem;
+}
+.basicdailythird>button{
+    background-color: #d4d4d4;
+    font-size: 0.6rem;
+    width: 3rem;
+    height: 1.5rem;
+    color: #8c8c8c;
+    border:none ;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+.basicdailyfourth{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    height: 3rem;
+    /*text-align: center;*/
+}
+.basicdailyfourth>img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.basicdailyfourth>button{
+    /*margin:.6rem 0 0 1rem;*/
+    width: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    height: 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+}
+

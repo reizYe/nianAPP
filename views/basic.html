@@ -1,0 +1,32 @@
+<header class="basic" ng-controller="basicCtrl">
+    <nav>
+        <span class="iconfont icon-set" ui-sref="basic/basicsetting"></span>
+        <span class="iconfont icon-service" ui-sref="basic/basiccollect"></span>
+    </nav>
+   <section class="basic-userinfo">
+       <div class="userimg" ui-sref="basic/basicsetting"></div>
+       <p>{{username}}</p>
+       <p>倒计时 {{usertime}}</p>
+       <article>
+           <div><a ui-sref="basic/basicmoney">念币&nbsp;<span>{{money}}</span></a></div>
+           <div><a href="">宠物&nbsp;<span>{{dog}}</span></a></div>
+       </article>
+   </section>
+</header>
+<section>
+    <div class="basic-container">
+        <div class="containerhead">
+            <span>记本</span>
+            <span>添加记本</span>
+        </div>
+        <article class="containerbody">
+            <div ng-repeat="item in basic_data">
+                <div>
+                    <!--ui-sref="basic/basicdaily/{{item.id}}"-->
+                    <a href="#/basic/basicdaily/{{item.id}}"><img ng-src="{{item.img}}"  class="containerbody-img"></a>
+                </div>
+                <p>{{item.description}}</p>
+            </div>
+        </article>
+    </div>
+</section>

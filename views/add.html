@@ -1,0 +1,26 @@
+<header class="commonheader">
+    <section>
+        <span class="iconfont icon-back" ui-sref="basic"></span>
+        <div>
+            <span class="addheader">新进展！</span>
+        </div>
+        <span class="iconfont icon-success"></span>
+    </section>
+</header>
+<section class="commonbody">
+    <article class="addbody">
+      <div class="addshowtext" ng-click="toggle()">
+          <img  ng-src="{{myimages}}" alt="">
+          <span>{{choosetext}}</span>
+          <b class="sprites2x"></b>
+      </div>
+    </article>
+    <article ng-click="close()">
+        <div class="addchoosetext" ng-show="show" >
+            <div ng-repeat="item in basic_data">
+                <img ng-src="{{item.img}}"  alt="">
+                <span ng-click="selectdesc(item.description,item.img)">{{item.description}}</span>
+            </div>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,20 @@
+<header class="commonheader">
+    <section>
+        <span class="iconfont icon-back" ui-sref="message"></span>
+        <div>
+            <span class="addheader">关注</span>
+        </div>
+        <!--<span class="iconfont icon-success"></span>-->
+    </section>
+</header>
+<section class="commonbody">
+    <article class="messagebody">
+        <div ng-repeat="message in messagefocuslist">
+            <img ng-src="{{message.img}}" alt="">
+            <div>
+                <span>{{message.name}}</span>
+                <button>写信</button>
+            </div>
+        </div>
+    </article>
+</section>
